@@ -1,0 +1,1919 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BacksideViewController">
+            <connections>
+                <outlet property="barImage" destination="350" id="359"/>
+                <outlet property="prayButton" destination="2372" id="2432"/>
+                <outlet property="shareButton" destination="2370" id="2433"/>
+                <outlet property="textView1" destination="1091" id="2403"/>
+                <outlet property="textView2" destination="1141" id="2404"/>
+                <outlet property="textView3" destination="593" id="2405"/>
+                <outlet property="textView4" destination="679" id="2406"/>
+                <outlet property="textView5" destination="884" id="2407"/>
+                <outlet property="textView6" destination="913" id="2408"/>
+                <outlet property="textView7" destination="916" id="2409"/>
+                <outlet property="textView8" destination="929" id="2410"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="webView" destination="cI0-zO-hjA" id="Rau-Wt-ZKN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="1" userLabel="Main">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="748"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="350">
+                    <rect key="frame" x="0.0" y="12" width="225" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="358"/>
+                        <constraint firstAttribute="width" constant="225" id="2883"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2370">
+                    <rect key="frame" x="204" y="633" width="115" height="115"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="ZUe-o6-SKd"/>
+                        <constraint firstAttribute="height" constant="115" id="g5f-o1-PMF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="new_followup.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="share:" destination="-1" eventType="touchUpInside" id="2396"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2372">
+                    <rect key="frame" x="75" y="633" width="115" height="115"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="ADk-Wk-1EC"/>
+                        <constraint firstAttribute="height" constant="115" id="htA-G7-Wya"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="new_pray.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="footerPray:" destination="-1" eventType="touchUpInside" id="2431"/>
+                    </connections>
+                </button>
+                <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cI0-zO-hjA">
+                    <rect key="frame" x="4" y="69" width="387" height="556"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="387" id="SO6-yq-Okq"/>
+                        <constraint firstAttribute="height" constant="556" id="eSM-KV-aNK"/>
+                    </constraints>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="350" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="2801"/>
+                <constraint firstItem="350" firstAttribute="top" secondItem="1" secondAttribute="top" constant="12" id="2850"/>
+                <constraint firstAttribute="bottom" secondItem="2370" secondAttribute="bottom" id="DtT-4W-nNN"/>
+                <constraint firstAttribute="bottom" secondItem="2372" secondAttribute="bottom" id="Iat-6i-W9u"/>
+                <constraint firstItem="cI0-zO-hjA" firstAttribute="top" secondItem="350" secondAttribute="bottom" constant="37" id="Nun-3v-x4A"/>
+                <constraint firstItem="cI0-zO-hjA" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="4" id="pCk-r4-3jT"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="522" userLabel="Need for Change -- Back">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="340"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1091">
+                    <rect key="frame" x="20" y="20" width="366" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="2337"/>
+                        <constraint firstAttribute="width" constant="366" id="2343"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Need for Change
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">When you turn on the news, what do you see? Racism, terrorism, global warming…the list goes on and on.
+It’s obvious our world is messed up.
+But what’s more revealing is the human response: How do you feel about this kind of world?
+None of us think that suffering, violence, and oppression are good things. </string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">We all ache for a better world.
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">So what does this mean?
+Just like hunger points to the existence of food, and thirst highlights the reality of water, our ache for a better world seems to point to the possibility that either a better world did exist or that it will one day.
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1091" firstAttribute="centerX" secondItem="522" secondAttribute="centerX" constant="-3" id="2340"/>
+                <constraint firstItem="1091" firstAttribute="top" secondItem="522" secondAttribute="top" constant="20" id="2851"/>
+                <constraint firstAttribute="bottom" secondItem="1091" secondAttribute="bottom" id="2852"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="bM1-EL-hfb" userLabel="Need for Change -- Back">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="434"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCR-pq-Jzk">
+                    <rect key="frame" x="14" y="10" width="366" height="414"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="414" id="PUN-Oc-6kR"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="366" id="bCS-gN-3mU"/>
+                        <constraint firstAttribute="width" constant="366" id="ef0-PN-bR0"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="414" id="sLj-R3-hm0"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">1 Designed for Good
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">In the Christian worldview, a better world did exist.
+God created a good world and it worked beautifully. All creation was under his leadership and enjoyed him as the source of life.</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and the world:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" God designed the world to take care of us and we were designed to flourish in human communities as we cared for the world.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and each other:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" People were designed to love and serve one another.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and God:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" We were each designed to live in a trusting and intimate relationship with God as our just and loving leader.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="The world and all that’s in it was designed for good.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ba0-hm-Zch">
+                    <rect key="frame" x="134" y="84" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Genesis 1:31">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="Hbk-gN-aco"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4e-KY-15x">
+                    <rect key="frame" x="272" y="161" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Genesis 1:28">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="XBu-9Z-4il"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dur-yL-wsN">
+                    <rect key="frame" x="146" y="218" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Genesis 1:27">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="Whk-3L-q73"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-Xu-4xG">
+                    <rect key="frame" x="244" y="218" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Genesis 2:18">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="DCj-kf-ULP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4H-Vx-1bD">
+                    <rect key="frame" x="72" y="295" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Genesis 1:26">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="D77-mM-a50"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QCR-pq-Jzk" firstAttribute="leading" secondItem="bM1-EL-hfb" secondAttribute="leading" constant="14" id="Is9-bQ-TTv"/>
+                <constraint firstItem="QCR-pq-Jzk" firstAttribute="top" secondItem="bM1-EL-hfb" secondAttribute="top" constant="10" id="P6J-gk-UOH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="1120" userLabel="2 - Damaged By Evil -- Back">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="646"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1141">
+                    <rect key="frame" x="9" y="6" width="382" height="640"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="640" id="2549"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="640" id="0B8-JR-Oq7"/>
+                        <constraint firstAttribute="width" constant="382" id="a4I-u4-NJP"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">2 Damaged by Evil
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">Clearly, the world isn’t living according to its design.
+We rejected God’s leadership, took charge, and essentially became our own god. By doing so, we broke our relationship with God, and left ourselves and our world in a state of death. On every level, we have become corrupt. We see evidence of this corruption all around us.
+
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and the world:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> We destructively use the world and the people in it for our own benefit instead of serving them. We see this in sex trafficking, domestic slavery, injustice, oppression, genocide, etc. 
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and each other:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> We harmfully use people instead of serving them. We see this in conflicts, objectification of people and groups, alienation, bitterness, abuse, lust, anger, etc.</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and God:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" We damage ourselves and our relationship with God. We refuse to come under his leadership.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+We all suffer under these realities. We all contribute to the problem.
+
+Our corruption compels us toward evil even as we try to do good. Education, technology, and government never get to the root of the problem. The Bible says that God “has set a day when the entire human race will be judged and everything set right.” Not only will he judge the evil people out there, God has seen our own corrupt sides and will hold us accountable.
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="We – and the world – are damaged by evil.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <font key="NSFont" size="12" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1121">
+                    <rect key="frame" x="125" y="149" width="88" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Isaiah 53:6">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="1154"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTj-x7-gka">
+                    <rect key="frame" x="208" y="149" width="88" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Romans 6:23">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="bCl-j5-BXJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zc0-lh-adB">
+                    <rect key="frame" x="292" y="149" width="88" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Isaiah 59:2">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="v0z-ky-x9H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fEe-bv-nKa">
+                    <rect key="frame" x="187" y="226" width="120" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Galatians 5:19-20">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="Qw9-U2-s5O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kM7-CI-6yE">
+                    <rect key="frame" x="260" y="377" width="120" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Romans 1:21-22">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="6mn-cJ-7sr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hS6-7T-hhy">
+                    <rect key="frame" x="66" y="416" width="99" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Romans 3:23">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="0Eg-tJ-hzB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZO-VB-v1Y">
+                    <rect key="frame" x="142" y="570" width="88" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Acts 17:31">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="HJi-Jf-uXs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1141" firstAttribute="centerX" secondItem="1120" secondAttribute="centerX" id="2527"/>
+                <constraint firstAttribute="bottom" secondItem="1141" secondAttribute="bottom" id="2550"/>
+                <constraint firstItem="1141" firstAttribute="top" secondItem="1120" secondAttribute="top" constant="6" id="2551"/>
+            </constraints>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="572" userLabel="3 - Restored for Better – Back">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="536"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="593">
+                    <rect key="frame" x="9" y="6" width="382" height="503"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="503" id="2598"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="503" id="U6b-4i-Qne"/>
+                        <constraint firstAttribute="width" constant="382" id="gEn-6s-v7S"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">3 Restored for Better
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">But God loves the world too much to leave it this way.
+Because he loves us, God responds to the injustice and corruption. He came as Jesus over 2,000 years ago.</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+By doing that, God started teaching us a better way to live, a way in which all the good things that are supposed to happen actually do.
+Jesus did three things:
+
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Identified:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" Jesus became one of us, identifying with us by living in a damaged world (though he never contributed to the damage).">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+IAo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Owned:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" Jesus died on the cross, owning the judgment we deserve for the corruption of the world and the corruption in our hearts.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+IAo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Overcame:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> Jesus rose from the dead, overcoming death, and unleashing power to restore our damaged world.  
+
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Through Jesus, everything is being restored for better.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1T5-Pc-po9">
+                    <rect key="frame" x="298" y="88" width="76" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="John 3:16">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="mFV-v9-Xn3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avG-6h-BCs">
+                    <rect key="frame" x="95" y="243" width="116" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Philippians 2:6-7">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="yPM-ue-o1Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUd-BR-ms4">
+                    <rect key="frame" x="213" y="243" width="125" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="2 Corinthians 5:21">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="eE3-44-FoM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ZD-29-ybV">
+                    <rect key="frame" x="95" y="318" width="108" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Philippians 2:8">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="qQ3-KV-oJD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7jG-ro-gkM">
+                    <rect key="frame" x="203" y="318" width="108" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Romans 3:25-26">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="2SS-9Y-EuL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="593" firstAttribute="centerX" secondItem="572" secondAttribute="centerX" id="2584"/>
+                <constraint firstItem="593" firstAttribute="top" secondItem="572" secondAttribute="top" constant="6" id="2596"/>
+                <constraint firstAttribute="bottom" secondItem="593" secondAttribute="bottom" constant="27" id="2599"/>
+            </constraints>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="677" userLabel="4 - Designed For Good -- Back">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="671"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="679">
+                    <rect key="frame" x="9" y="2" width="382" height="669"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="669" id="2614"/>
+                        <constraint firstAttribute="width" constant="382" id="2838"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">4 Sent to Heal
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Jesus calls us to follow him as he heals the damage in the world.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="By following him, we become the hands and feet of Jesus in the world.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and the world:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> Jesus has the power to restore our damaged world. He invites us to follow him together into his world to expose corruption, bring justice, and love joyfully. 
+
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and each other:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" Jesus has the power to restore our relationships. He invites us to follow him by serving, loving, and forgiving each other.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Us and God:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> Jesus has the power to restore our relationship with God. He invites us to follow him by coming under his leadership. 
+
+We follow him by:
+
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Identifying:">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" We identify with Jesus’ work by believing his death and resurrection broke the cycle of corruption in us and in the world.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Owning: ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="We own our individual responsibility for the damaged world and receive his forgiveness.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Overcoming: ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">We overcome the damage in our world by committing to follow Jesus into his mission to the world. God gives us the power to follow Jesus by giving us his Spirit and a community of people who also follow Jesus.</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                                <integer key="NSSuperScript" value="1"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="With Jesus, our mission is to be sent to heal.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nmu-Pn-jbH">
+                    <rect key="frame" x="133" y="64" width="72" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Acts 3:6-7">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="94A-Ki-Dg5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ht7-bX-m3Z">
+                    <rect key="frame" x="202" y="64" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Matthew 5:14-16">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="SQC-dC-afA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmn-sQ-F6A">
+                    <rect key="frame" x="119" y="84" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="John 20:21-22">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="oL6-Eq-ZuR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guc-Lc-ycL">
+                    <rect key="frame" x="56" y="161" width="88" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Micah 6:8">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="GRF-0Z-ENf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="27" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFO-uv-Wmq">
+                    <rect key="frame" x="143" y="161" width="95" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Luke 4:18-19">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="RXV-Df-6Fv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJN-Ti-qmx">
+                    <rect key="frame" x="166" y="238" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Philippians 2:3-4">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="Mbn-fc-K94"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="28" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVU-Nw-zs5">
+                    <rect key="frame" x="159" y="264" width="124" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="1 John 4:10-11">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="0WC-xl-1hB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xhk-lZ-kl3">
+                    <rect key="frame" x="195" y="315" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Romans 5:10-11">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="kHo-va-X4h"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="29" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7f-Po-2C8">
+                    <rect key="frame" x="241" y="344" width="70" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Mark 1:17">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="U47-JY-6Kb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="30" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNp-8P-TOw">
+                    <rect key="frame" x="232" y="365" width="89" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Mark 2:14">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="WTf-R2-RmF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-fz-Q08">
+                    <rect key="frame" x="100" y="429" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="John 3:17-18">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="1m9-Gu-q3K"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Smf-iB-5j2">
+                    <rect key="frame" x="202" y="429" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Galatians 2:20-21">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="FQZ-3U-RwR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-VQ-D1C">
+                    <rect key="frame" x="100" y="450" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Romans 10:9">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="EKq-W0-BAb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1A-X9-2zk">
+                    <rect key="frame" x="119" y="503" width="67" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="1 John 1:9">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="asX-Az-2hv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ql-BB-dnU">
+                    <rect key="frame" x="195" y="503" width="88" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Acts 10:43">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="r59-85-OFs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRv-Ye-rcd">
+                    <rect key="frame" x="119" y="601" width="61" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Acts 1:8">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="b9s-4Y-gTu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="34" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hX-up-PhK">
+                    <rect key="frame" x="187" y="601" width="124" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Matthew 5:14-16">
+                                <attributes>
+                                    <color key="NSColor" red="0.8901960784313725" green="0.42745098039215684" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="Avenir-Medium"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="pray:" destination="-1" eventType="touchUpInside" id="1cB-7o-NaL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="679" secondAttribute="bottom" id="2330"/>
+                <constraint firstItem="679" firstAttribute="centerX" secondItem="677" secondAttribute="centerX" id="2618"/>
+                <constraint firstItem="679" firstAttribute="top" secondItem="677" secondAttribute="top" constant="2" id="2623"/>
+            </constraints>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="tzG-V1-0o6" userLabel="5a - Only Through Jesus">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="409"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wtv-F1-gDB">
+                    <rect key="frame" x="9" y="11" width="382" height="400"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="DAc-tv-YL1"/>
+                        <constraint firstAttribute="height" constant="400" id="W4o-9p-xiT"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="382" id="WSg-7n-dWZ"/>
+                        <constraint firstAttribute="width" constant="382" id="v4e-kK-4go"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Only Through Jesus
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">But why can’t we just jump to the last world in the diagram?
+
+We might like the mission Jesus is talking about, but we want to do it without faith or spirituality.
+
+Even if we could do this—which we can’t—we’d be missing out.
+
+The world’s problems are infinite. We are bound to get overwhelmed if we try to take care of it all on our own. Plus, our anger, prejudices, and self-righteousness will compete with our service, limiting the amount of healing we can offer.
+
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="We need resources like Christian community and God’s presence, the Holy Spirit, which we can get only through Jesus.">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wtv-F1-gDB" secondAttribute="trailing" constant="9" id="0Qw-gJ-FTN"/>
+                <constraint firstItem="Wtv-F1-gDB" firstAttribute="top" secondItem="tzG-V1-0o6" secondAttribute="top" constant="11" id="Buq-Mw-in8"/>
+                <constraint firstItem="Wtv-F1-gDB" firstAttribute="centerX" secondItem="tzG-V1-0o6" secondAttribute="centerX" id="VrJ-ID-BKL"/>
+                <constraint firstAttribute="bottom" secondItem="Wtv-F1-gDB" secondAttribute="bottom" constant="-2" id="eTe-9V-32l"/>
+            </constraints>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="880" userLabel="5 - Where Are You? – Designed for Good">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="409"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="884">
+                    <rect key="frame" x="9" y="11" width="382" height="400"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="898"/>
+                        <constraint firstAttribute="width" constant="382" id="2712"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="nfh-q7-dmD"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="382" id="yC6-wJ-e2K"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Where Are You? - 1 Designed for Good
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="17" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">IF YOU ARE IN WORLD 1, you think the world is fine. But we have seen that it is hard to reconcile this with the suffering in the world. How do you reconcile these things?</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="15" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <font key="NSFont" size="13" name="Helvetica"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="884" firstAttribute="top" secondItem="880" secondAttribute="top" constant="11" id="888"/>
+                <constraint firstAttribute="bottom" secondItem="884" secondAttribute="bottom" constant="-2" id="906"/>
+                <constraint firstAttribute="trailing" secondItem="884" secondAttribute="trailing" constant="9" id="2714"/>
+                <constraint firstItem="884" firstAttribute="centerX" secondItem="880" secondAttribute="centerX" id="2715"/>
+            </constraints>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="907" userLabel="6 - Where Are You? – Damaged by Evil">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="409"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="913">
+                    <rect key="frame" x="9" y="11" width="382" height="400"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="914"/>
+                        <constraint firstAttribute="width" constant="382" id="2725"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="382" id="7pO-Jg-Pop"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="HyV-ct-ukm"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Where Are You? - 2 Damaged by Evil
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">IF YOU ARE IN WORLD 2, you’re overwhelmed by the evil in the world, and even the evil in your own heart. Jesus is calling you to follow him.
+
+Would you like to become a follower of Jesus today?
+
+You can begin by telling Jesus you would like to become a follower. You can pray using “A Prayer Response to Jesus” (click the Pray icon below).</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="913" firstAttribute="top" secondItem="907" secondAttribute="top" constant="11" id="911"/>
+                <constraint firstAttribute="bottom" secondItem="913" secondAttribute="bottom" constant="-2" id="912"/>
+                <constraint firstAttribute="trailing" secondItem="913" secondAttribute="trailing" constant="9" id="2723"/>
+                <constraint firstItem="913" firstAttribute="centerX" secondItem="907" secondAttribute="centerX" id="2724"/>
+            </constraints>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="915" userLabel="7 - Where Are You? – Restored for Better">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="409"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="916">
+                    <rect key="frame" x="9" y="11" width="382" height="656"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="656" id="922"/>
+                        <constraint firstAttribute="width" constant="382" id="2729"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="656" id="U3F-Xt-lqt"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="382" id="XdS-Jd-dsn"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Where Are You? - 3 Restored for Better
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">IF YOU ARE IN WORLD 3, you have some understanding of what Jesus did and he is calling you to follow him.
+
+Would you like to become a follower of Jesus and engage in his mission to heal the world with his community and with the help of his Spirit today?
+
+You can begin by telling Jesus you would like to become a follower. You can pray using “A Prayer Response to Jesus” (click the Pray icon below).</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="916" secondAttribute="bottom" constant="-258" id="917"/>
+                <constraint firstItem="916" firstAttribute="top" secondItem="915" secondAttribute="top" constant="11" id="918"/>
+                <constraint firstAttribute="trailing" secondItem="916" secondAttribute="trailing" constant="9" id="2730"/>
+                <constraint firstItem="916" firstAttribute="centerX" secondItem="915" secondAttribute="centerX" id="2731"/>
+            </constraints>
+        </scrollView>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="923" userLabel="8 -Where Are You? – Sent to Heal">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="461"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="929">
+                    <rect key="frame" x="9" y="11" width="382" height="441"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="441" id="1321"/>
+                        <constraint firstAttribute="width" constant="382" id="2732"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Where Are You? -  4 Sent to Heal
+</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="16" name="Avenir-Black"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">IF YOU ARE IN WORLD 4, you are doing good in the world. Are you following Jesus and engaging in his mission to heal the world with his community?
+
+IF YES: Are you involved in Jesus’ community? Would you like to receive information about fellowship?
+
+IF NO: Would you like to become a follower of Jesus and engage in his mission to heal the world with his community and with the help of his Spirit today?
+
+You can begin by telling Jesus you would like to become a follower. You can pray using “A Prayer Response to Jesus” (click the Pray icon below).</string>
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="14" name="Avenir-Book"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="929" firstAttribute="top" secondItem="923" secondAttribute="top" constant="11" id="927"/>
+                <constraint firstAttribute="bottom" secondItem="929" secondAttribute="bottom" constant="9" id="1323"/>
+                <constraint firstAttribute="trailing" secondItem="929" secondAttribute="trailing" constant="9" id="2734"/>
+                <constraint firstItem="929" firstAttribute="centerX" secondItem="923" secondAttribute="centerX" id="2735"/>
+            </constraints>
+        </scrollView>
+    </objects>
+    <resources>
+        <image name="new_followup.png" width="123" height="97"/>
+        <image name="new_pray.png" width="101" height="97"/>
+    </resources>
+</document>

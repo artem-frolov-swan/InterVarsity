@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TutorialViewController">
+            <connections>
+                <outlet property="menuButton" destination="72" id="4M7-yI-Uul"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cardstartedinner.png" translatesAutoresizingMaskIntoConstraints="NO" id="46">
+                    <rect key="frame" x="0.0" y="-260" width="1024" height="1289"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1289" id="62"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="new_ipad_tutorial@4x.png" translatesAutoresizingMaskIntoConstraints="NO" id="55">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70">
+                    <rect key="frame" x="889" y="648" width="115" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="85"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="new_ipad_blue_save.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71">
+                    <rect key="frame" x="766" y="648" width="115" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="73"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="new_ipad_blue_erase.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72">
+                    <rect key="frame" x="643" y="648" width="115" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="83"/>
+                        <constraint firstAttribute="height" constant="115" id="84"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="new_ipad_blue_menu.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="92"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64">
+                    <rect key="frame" x="4" y="0.0" width="75" height="768"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="65"/>
+                        <constraint firstAttribute="height" constant="768" id="66"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="new_ipad_info.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="46" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="53"/>
+                <constraint firstItem="64" firstAttribute="centerY" secondItem="46" secondAttribute="centerY" id="69"/>
+                <constraint firstItem="72" firstAttribute="bottom" secondItem="71" secondAttribute="bottom" id="75"/>
+                <constraint firstItem="71" firstAttribute="top" secondItem="72" secondAttribute="top" id="77"/>
+                <constraint firstItem="70" firstAttribute="bottom" secondItem="71" secondAttribute="bottom" id="78"/>
+                <constraint firstItem="70" firstAttribute="top" secondItem="71" secondAttribute="top" id="79"/>
+                <constraint firstItem="64" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="4" id="86"/>
+                <constraint firstAttribute="trailing" secondItem="72" secondAttribute="trailing" constant="266" id="87"/>
+                <constraint firstAttribute="trailing" secondItem="70" secondAttribute="trailing" constant="20" id="88"/>
+                <constraint firstAttribute="bottom" secondItem="72" secondAttribute="bottom" constant="5" id="89"/>
+                <constraint firstAttribute="trailing" secondItem="71" secondAttribute="trailing" constant="143" id="90"/>
+                <constraint firstItem="46" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="91"/>
+                <constraint firstAttribute="bottom" secondItem="55" secondAttribute="bottom" id="2GI-Go-jGn"/>
+                <constraint firstAttribute="trailing" secondItem="55" secondAttribute="trailing" id="MRv-DC-MyI"/>
+                <constraint firstItem="55" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="d8c-Zq-jNs"/>
+                <constraint firstItem="55" firstAttribute="top" secondItem="1" secondAttribute="top" id="mtC-Bj-R4u"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardstartedinner.png" width="1024" height="768"/>
+        <image name="new_ipad_blue_erase.png" width="115" height="115"/>
+        <image name="new_ipad_blue_menu.png" width="115" height="115"/>
+        <image name="new_ipad_blue_save.png" width="115" height="115"/>
+        <image name="new_ipad_info.png" width="75" height="100"/>
+        <image name="new_ipad_tutorial@4x.png" width="2048" height="1536"/>
+    </resources>
+</document>

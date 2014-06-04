@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="MIi-UW-MVM">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--New Tutorial View Controller-->
+        <scene sceneID="P5l-xv-Th0">
+            <objects>
+                <viewController id="mYW-Ft-EFw" customClass="NewTutorialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="98H-8h-Hox"/>
+                        <viewControllerLayoutGuide type="bottom" id="uuw-Zm-acp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iHy-Mx-Sp1" customClass="New">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Qp-JC-pxG">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFl-AZ-5bw">
+                                <rect key="frame" x="923" y="667" width="101" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="HAW-PH-dop"/>
+                                    <constraint firstAttribute="width" constant="101" id="lhc-dl-aZ6"/>
+                                </constraints>
+                                <state key="normal" image="new_ipad_back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="mYW-Ft-EFw" eventType="touchUpInside" id="3Ah-L3-tCY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_tutorial_navbar_ipad.png" translatesAutoresizingMaskIntoConstraints="NO" id="P30-f4-P7A">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="1DK-ta-XlA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="DEMO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbK-Jg-xhu">
+                                <rect key="frame" x="150" y="94" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iS-sr-7f4" userLabel="demoButton">
+                                <rect key="frame" x="292" y="94" width="440" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="W9E-mH-M5f"/>
+                                    <constraint firstAttribute="width" constant="440" id="fXE-cW-aoe"/>
+                                </constraints>
+                                <state key="normal" image="video_image_ipad.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deoButtonTapped:" destination="mYW-Ft-EFw" eventType="touchUpInside" id="Izp-iZ-eVB"/>
+                                    <segue destination="knH-JZ-DBw" kind="push" id="7pW-Od-9tK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OVERLAY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghi-rA-TYz">
+                                <rect key="frame" x="150" y="387" width="134" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="747" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzj-X6-jTw" userLabel="overButton">
+                                <rect key="frame" x="292" y="387" width="440" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="440" id="6aU-g8-Q1y"/>
+                                    <constraint firstAttribute="height" constant="330" id="P7i-SY-8PI"/>
+                                </constraints>
+                                <state key="normal" image="overlay_image_ipad.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="overlayButtonTapped:" destination="mYW-Ft-EFw" eventType="touchUpInside" id="1aq-Ts-8yR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ghi-rA-TYz" firstAttribute="leading" secondItem="iHy-Mx-Sp1" secondAttribute="leading" constant="150" id="0Qw-ac-m8Y"/>
+                            <constraint firstItem="ghi-rA-TYz" firstAttribute="top" secondItem="P30-f4-P7A" secondAttribute="bottom" constant="313" id="1R7-Px-fml"/>
+                            <constraint firstAttribute="trailing" secondItem="6Qp-JC-pxG" secondAttribute="trailing" id="2vY-yv-4i2"/>
+                            <constraint firstItem="6Qp-JC-pxG" firstAttribute="top" secondItem="iHy-Mx-Sp1" secondAttribute="top" id="7VK-Oy-jnp"/>
+                            <constraint firstItem="UbK-Jg-xhu" firstAttribute="top" secondItem="P30-f4-P7A" secondAttribute="bottom" constant="20" id="9E6-5A-rEt"/>
+                            <constraint firstItem="2iS-sr-7f4" firstAttribute="top" secondItem="P30-f4-P7A" secondAttribute="bottom" constant="20" id="AoW-tx-jnq"/>
+                            <constraint firstItem="P30-f4-P7A" firstAttribute="trailing" secondItem="aFl-AZ-5bw" secondAttribute="trailing" id="Eor-3G-CYf"/>
+                            <constraint firstAttribute="bottom" secondItem="6Qp-JC-pxG" secondAttribute="bottom" id="FXR-R8-isU"/>
+                            <constraint firstItem="Lzj-X6-jTw" firstAttribute="top" secondItem="P30-f4-P7A" secondAttribute="bottom" constant="313" id="M3d-Wt-shy"/>
+                            <constraint firstItem="6Qp-JC-pxG" firstAttribute="leading" secondItem="iHy-Mx-Sp1" secondAttribute="leading" id="NPq-kC-PZu"/>
+                            <constraint firstItem="P30-f4-P7A" firstAttribute="top" secondItem="6Qp-JC-pxG" secondAttribute="top" id="WEV-Nq-dao"/>
+                            <constraint firstItem="P30-f4-P7A" firstAttribute="leading" secondItem="6Qp-JC-pxG" secondAttribute="leading" id="dkC-Et-YpJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Lzj-X6-jTw" secondAttribute="trailing" constant="292" id="i55-zk-H4H"/>
+                            <constraint firstItem="UbK-Jg-xhu" firstAttribute="leading" secondItem="iHy-Mx-Sp1" secondAttribute="leading" constant="150" id="ncY-M0-ZQ3"/>
+                            <constraint firstAttribute="trailing" secondItem="aFl-AZ-5bw" secondAttribute="trailing" id="tpt-oV-Cuf"/>
+                            <constraint firstAttribute="trailing" secondItem="2iS-sr-7f4" secondAttribute="trailing" constant="292" id="uLH-aO-6l3"/>
+                            <constraint firstAttribute="bottom" secondItem="aFl-AZ-5bw" secondAttribute="bottom" id="v5H-YU-Mfw"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="To4-0n-KpF"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ero-5P-BPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="-1059"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="WjF-Cw-Drb">
+            <objects>
+                <viewController id="knH-JZ-DBw" customClass="DemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EV7-pL-elH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Czo-gg-3KF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gBi-LT-Pvg">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ofc-Ox-6Gp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MfD-7W-nj2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI2-fB-BLo">
+                                <rect key="frame" x="923" y="667" width="101" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="jju-O7-eMm"/>
+                                    <constraint firstAttribute="width" constant="101" id="tPw-1t-vYi"/>
+                                </constraints>
+                                <state key="normal" image="new_ipad_back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="mYW-Ft-EFw" eventType="touchUpInside" id="O67-ky-WjY"/>
+                                    <action selector="backButtonTapped:" destination="knH-JZ-DBw" eventType="touchUpInside" id="YEC-Qe-3i0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RI2-fB-BLo" secondAttribute="bottom" id="LOt-xD-49i"/>
+                            <constraint firstAttribute="trailing" secondItem="RI2-fB-BLo" secondAttribute="trailing" id="OWh-mw-5Hh"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yIH-7D-wvW"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="videoView" destination="MfD-7W-nj2" id="h2d-Uq-Pkt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekU-jj-UjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="-1295"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" extendedLayoutIncludesOpaqueBars="YES" id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WGz-BO-Osd"/>
+                        <viewControllerLayoutGuide type="bottom" id="PaY-G6-DKg"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="whiteGrunge-iPad.png" translatesAutoresizingMaskIntoConstraints="NO" id="vvJ-Nc-h2d">
+                                <rect key="frame" x="-9" y="0.0" width="1033" height="768"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2KS-X9-Bur">
+                                <rect key="frame" x="189" y="171" width="646" height="132"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_main_start_ipad.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="iPadStartNew:" destination="2" eventType="touchUpInside" id="caI-gU-rHf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0i-4A-hYP">
+                                <rect key="frame" x="189" y="340" width="646" height="132"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_main_resume_ipad.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeiPadSession:" destination="2" eventType="touchUpInside" id="pj9-L8-5Qy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atc-Zu-RYI">
+                                <rect key="frame" x="189" y="508" width="181" height="100"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_main_share_ipad.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareApp:" destination="2" eventType="touchUpInside" id="KTC-Kh-cyP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j10-SX-PcY">
+                                <rect key="frame" x="417" y="508" width="181" height="100"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_main_about_ipad.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutTapped:" destination="2" eventType="touchUpInside" id="Ukv-Pv-NvR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHU-Zd-C1T">
+                                <rect key="frame" x="654" y="508" width="181" height="100"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_main_tutorial_ipad.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTutorialClick:" destination="2" eventType="touchUpInside" id="HEY-wZ-T8e"/>
+                                    <segue destination="mYW-Ft-EFw" kind="push" id="dNQ-MS-Er1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Us3-PW-byQ"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="-125"/>
+        </scene>
+        <!--Trace View Controller-->
+        <scene sceneID="ioY-3a-XEM">
+            <objects>
+                <viewController storyboardIdentifier="TraceViewControlleriPad" hidesBottomBarWhenPushed="YES" id="67h-iy-lZ9" customClass="TraceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1aK-T9-Kcy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wmt-DL-g1M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1rt-SE-ndr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="cardstartedinner.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rfq-E9-7lx">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exF-vt-AIX">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="6888" height="708"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="67h-iy-lZ9" id="Ukn-wk-qBL"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvY-j2-4PZ">
+                                <rect key="frame" x="766" y="648" width="115" height="115"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_ipad_blue_erase.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteTapper:" destination="67h-iy-lZ9" eventType="touchUpInside" id="7bu-wM-r4S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-UE-ynx">
+                                <rect key="frame" x="889" y="648" width="115" height="115"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_ipad_blue_save.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lockOrUnlockCurrentCard:" destination="67h-iy-lZ9" eventType="touchUpInside" id="O6P-vj-XRj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0A-uI-Sod">
+                                <rect key="frame" x="643" y="648" width="115" height="115"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="new_ipad_blue_menu.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToMenu:" destination="67h-iy-lZ9" eventType="touchUpInside" id="y6T-9W-bjW"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JjE-8o-eYH" userLabel="Side Menu View">
+                                <rect key="frame" x="-396" y="0.0" width="475" height="768"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="paz-DQ-CBY" userLabel="Start Menu">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="768"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSA-fk-UsH" userLabel="SideLine">
+                                                <rect key="frame" x="394" y="0.0" width="6" height="768"/>
+                                                <color key="backgroundColor" red="0.94901960784313721" green="0.66666666666666663" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.086274509803921567" green="0.30196078431372547" blue="0.45490196078431372" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2L-h9-L35">
+                                        <rect key="frame" x="400" y="0.0" width="75" height="768"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Button" image="infoButtonipad.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showHideSidePanel:" destination="67h-iy-lZ9" eventType="touchUpInside" id="Isr-sg-5ov"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="768" id="nZf-Bg-NEY"/>
+                                    <constraint firstAttribute="width" constant="475" id="oug-Kc-bCg"/>
+                                </constraints>
+                                <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="pcc-SW-h2j">
+                                <rect key="frame" x="512" y="732" width="38" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="eraseButton" destination="hvY-j2-4PZ" id="S6E-d6-LQN"/>
+                        <outlet property="imgCardBg" destination="Rfq-E9-7lx" id="oqC-rz-G4p"/>
+                        <outlet property="infoButton" destination="u2L-h9-L35" id="g4i-Bj-RuY"/>
+                        <outlet property="menuButton" destination="r0A-uI-Sod" id="NCI-kh-tt6"/>
+                        <outlet property="pageControl" destination="pcc-SW-h2j" id="Hi9-1X-bqS"/>
+                        <outlet property="save1" destination="pLA-UE-ynx" id="KdC-d4-9of"/>
+                        <outlet property="scrollView" destination="exF-vt-AIX" id="wme-27-aEy"/>
+                        <outlet property="sideMenu" destination="JjE-8o-eYH" id="odx-u0-CXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0FA-qj-vfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="-303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3KI-Mk-x3s">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="MIi-UW-MVM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yug-WM-SW6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="8Vb-2D-8gO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cK2-64-wSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="-141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bluebg.png" width="20" height="568"/>
+        <image name="cardstartedinner.png" width="1024" height="768"/>
+        <image name="infoButtonipad.png" width="75" height="100"/>
+        <image name="new_ipad_back.png" width="202" height="202"/>
+        <image name="new_ipad_blue_erase.png" width="115" height="115"/>
+        <image name="new_ipad_blue_menu.png" width="115" height="115"/>
+        <image name="new_ipad_blue_save.png" width="115" height="115"/>
+        <image name="new_main_about_ipad.png" width="368" height="200"/>
+        <image name="new_main_resume_ipad.png" width="1296" height="265"/>
+        <image name="new_main_share_ipad.png" width="368" height="200"/>
+        <image name="new_main_start_ipad.png" width="1296" height="265"/>
+        <image name="new_main_tutorial_ipad.png" width="368" height="200"/>
+        <image name="new_tutorial_navbar_ipad.png" width="8533" height="617"/>
+        <image name="overlay_image_ipad.png" width="3335" height="2501"/>
+        <image name="video_image_ipad.png" width="3335" height="1880"/>
+        <image name="whiteGrunge-iPad.png" width="1024" height="768"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

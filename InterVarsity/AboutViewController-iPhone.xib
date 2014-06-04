@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
+            <connections>
+                <outlet property="view" destination="1" id="45"/>
+                <outlet property="webview" destination="UNb-Ds-O3T" id="Rgp-PI-LYe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="495"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="aboutscreenbg-iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="0.0" y="0.0" width="316" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="568" id="T3w-fl-hOB"/>
+                    </constraints>
+                </imageView>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Uw-Ir-mCi">
+                    <rect key="frame" x="21" y="436" width="274" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.76862745099999996" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2" id="Exk-Tv-P35"/>
+                        <constraint firstAttribute="height" constant="2" id="zwp-L3-5Js"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38">
+                    <rect key="frame" x="254" y="433" width="62" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="FNh-N4-ZD7"/>
+                        <constraint firstAttribute="height" constant="62" id="bRr-uF-yOG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" image="new_btn_back.png">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="46"/>
+                    </connections>
+                </button>
+                <webView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNb-Ds-O3T">
+                    <rect key="frame" x="20" y="57" width="275" height="376"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="0.0" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8Uw-Ir-mCi" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="21" id="3cl-Fz-Kf9"/>
+                <constraint firstItem="UNb-Ds-O3T" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="5fZ-hP-Hra"/>
+                <constraint firstAttribute="trailing" secondItem="8Uw-Ir-mCi" secondAttribute="trailing" constant="21" id="7eS-bL-XdD"/>
+                <constraint firstAttribute="trailing" secondItem="UNb-Ds-O3T" secondAttribute="trailing" constant="21" id="Bz5-xH-Gaz"/>
+                <constraint firstAttribute="trailing" secondItem="38" secondAttribute="trailing" id="Gya-DP-SKo"/>
+                <constraint firstItem="UNb-Ds-O3T" firstAttribute="top" secondItem="1" secondAttribute="top" constant="57" id="NaK-rH-dmE"/>
+                <constraint firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="O4M-Gc-vqa"/>
+                <constraint firstAttribute="bottom" secondItem="38" secondAttribute="bottom" id="a8M-Ih-RiE"/>
+                <constraint firstAttribute="bottom" secondItem="UNb-Ds-O3T" secondAttribute="bottom" constant="62" id="jRf-Nq-xz1"/>
+                <constraint firstAttribute="bottom" secondItem="8Uw-Ir-mCi" secondAttribute="bottom" constant="57" id="mT1-vu-PqX"/>
+                <constraint firstItem="3" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wJh-Qp-5BR"/>
+                <constraint firstItem="3" firstAttribute="top" secondItem="1" secondAttribute="top" id="yYL-CB-dUN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aboutscreenbg-iphone.png" width="641" height="1136"/>
+        <image name="new_btn_back.png" width="61" height="61"/>
+    </resources>
+</document>
