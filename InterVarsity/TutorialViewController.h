@@ -14,7 +14,9 @@
     IBOutlet UIButton *save1;
     IBOutlet UIButton *menuButton;
     IBOutlet UIButton *infoButton;
+    
 }
+@property (nonatomic, strong) NSString *cameFromVC;
 
 - (IBAction)btnBack:(id)sender;
 

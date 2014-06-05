@@ -206,7 +206,8 @@ BOOL IS_IPHONE5_RETINA(void) {
     if(bOpenedOnce == NO) {
         [userdefault setBool:YES forKey:@"appstartedatleastonce"];
         [userdefault synchronize];
-        [self btnTutorialClick:nil];
+        //[self btnTutorialClick:nil];
+        [self openTutorialScreen];
     }
     else {
         appDelegate.bResumeCard = NO;
@@ -266,6 +267,21 @@ BOOL IS_IPHONE5_RETINA(void) {
     }
                      }];
      */
+}
+
+-(void) openTutorialScreen{
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        TutorialViewController *controller = [[TutorialViewController alloc]
+                                              initWithNibName:@"TutorialViewController-iPad" bundle:nil];
+        [self.navigationController pushViewController:controller animated:YES];
+        
+    }
+    else
+    {
+        TutorialViewController *controller = [[TutorialViewController alloc] initWithNibName:@"TutorialViewController-iPhone" bundle:nil];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 

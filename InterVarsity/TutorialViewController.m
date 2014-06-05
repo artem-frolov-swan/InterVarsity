@@ -149,19 +149,23 @@
                          self.view.alpha = 0.65;
                      }
                      completion:^(BOOL finished) {
+                         if ([_cameFromVC isEqualToString:@"NewTutScreen"]) {
+                             [self.navigationController popViewControllerAnimated:YES];
+                         } else {
+                             AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+                             
+                             if (appDelegate.bResumeCard == NO)
+                             {
+                                 [appDelegate resumeCard:nil];
+                             }
+                             else
+                             {
+                                 [appDelegate resumeCard:self];
+                                 appDelegate.bResumeCard = NO;
+                             }
+ 
+                         }
                          
-//                         AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-//                         
-//                         if (appDelegate.bResumeCard == NO)
-//                         {
-//                             [appDelegate resumeCard:nil];
-//                         }
-//                         else
-//                         {
-//                             [appDelegate resumeCard:self];
-//                             appDelegate.bResumeCard = NO;
-//                         }
-                         [self.navigationController popViewControllerAnimated:YES];
                      }];
 }
 

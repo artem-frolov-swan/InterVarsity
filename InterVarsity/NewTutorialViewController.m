@@ -71,12 +71,13 @@
     {
         TutorialViewController *controller = [[TutorialViewController alloc]
                                                 initWithNibName:@"TutorialViewController-iPad" bundle:nil];
-        
+        controller.cameFromVC = @"NewTutScreen";
         [self.navigationController pushViewController:controller animated:YES];
     }
     else
     {
         TutorialViewController *controller = [[TutorialViewController alloc] initWithNibName:@"TutorialViewController-iPhone" bundle:nil];
+        controller.cameFromVC = @"NewTutScreen";
         [self.navigationController pushViewController:controller animated:YES];
         
     }
